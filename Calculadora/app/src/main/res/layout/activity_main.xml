@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mint.calculadora.MainActivity"
+    android:weightSum="1"
+    android:textAlignment="viewEnd">
+
+
+    <TextView
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:background="#b5b5b5"
+        android:textColor="#000ea7"
+        android:id="@+id/txtVisor"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.10"
+        android:textAlignment="gravity" />
+
+    <!-- Espacamento -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.18"
+        android:id="@+id/lytEspacamento">
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:weightSum="1"
+        android:layout_weight="0.04">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="21dp"
+            android:text="9"
+            android:onClick="Nove"
+            android:id="@+id/btnNove" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="21dp"
+            android:text="8"
+            android:id="@+id/btnOito"
+            android:onClick="Oito"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="21dp"
+            android:text="7"
+            android:id="@+id/btnSete"
+            android:onClick="Sete"
+             />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="21dp"
+            android:text="CE"
+            android:onClick="CE"
+            android:id="@+id/btnCE" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:weightSum="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="21dp"
+            android:text="6"
+            android:id="@+id/btnSeis"
+            android:onClick="Seis" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="21dp"
+            android:text="5"
+            android:id="@+id/btnCinco"
+            android:onClick="Cinco"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="21dp"
+            android:text="4"
+            android:id="@+id/btnQuatro"
+            android:onClick="Quatro"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="21dp"
+            android:text=" /"
+            android:id="@+id/btnDividir"
+            android:onClick="Dividir" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:weightSum="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="21dp"
+            android:text="3"
+            android:id="@+id/btnTres"
+            android:onClick="Tres"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="21dp"
+            android:text="2"
+            android:id="@+id/btnDois"
+            android:onClick="Dois"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="21dp"
+            android:text="1"
+            android:id="@+id/btnUm"
+            android:onClick="Um"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="21dp"
+            android:text=" *"
+            android:id="@+id/btnMultiplicar"
+            android:onClick="Multiplicar"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:weightSum="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="21dp"
+            android:text="0"
+            android:id="@+id/btnZero"
+            android:onClick="Zero"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="21dp"
+            android:text=" +"
+            android:id="@+id/btnSomar"
+            android:onClick="Somar"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="21dp"
+            android:text=" -"
+            android:id="@+id/btnSubtrair"
+            android:onClick="Subtrair"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="21dp"
+            android:text=" ="
+            android:id="@+id/btnIgual"
+            android:onClick="Igual"/>
+    </LinearLayout>
+
+    <!-- © Direitos Autorais  -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Walisson Felipe © Copyright 2016"
+            android:id="@+id/copyright"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.10" />
+    </LinearLayout>
+</LinearLayout>
